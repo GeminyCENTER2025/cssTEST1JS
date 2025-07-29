@@ -1,0 +1,689 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: #fff;
+}
+
+A {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.wrapper {
+  background-image: linear-gradient(
+    to bottom,
+    #000000,
+    #1d0c0d,
+    #2f140f,
+    #3f1c0b,
+    #4a2800
+  );
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 1400px;
+  margin: 0 auto;
+}
+
+header {
+  padding: 50px;
+}
+
+header .logo,
+footer .blocks .logo {
+  text-transform: uppercase;
+  font-size: 29px;
+  font-weight: 800px;
+}
+
+header nav {
+  float: right;
+  width: 50%;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  z-index: 2;
+  position: relative;
+}
+header nav ul li {
+  display: inline-block;
+}
+
+header nav ul li a {
+  color: #fff;
+}
+
+header nav ul li.active::after {
+  content: " ";
+  display: block;
+  width: 40px;
+  height: 5px;
+  background: #dc7000;
+  border-radius: 10px;
+  position: relative;
+  top: 10px;
+  left: -15px;
+}
+
+header nav ul li:not(.active):not(.btn) a:hover {
+  border-bottom: 5px solid #dc7000;
+}
+
+header nav ul li.btn a,
+.last .block button {
+  background: #fa9021;
+  padding: 9px 17px;
+  border-radius: 8px;
+  transition: all 200ms ease;
+}
+
+header nav ul li.btn a:hover,
+.last .block button:hover {
+  background: #4a2800;
+}
+
+.hero {
+  padding-bottom: 100px;
+  position: relative;
+  z-index: 1;
+}
+
+.hero--info {
+  width: 530px;
+  padding-top: 70px;
+}
+
+.hero--info h2 {
+  color: #e87d0e;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.hero--info h1 {
+  padding-top: 25px;
+  color: #fff;
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.hero--info p {
+  margin: 30px 0;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 170%;
+}
+
+.hero--info .btn,
+.hero-about .info .btn {
+  background-image: linear-gradient(
+    to right,
+    #fa8305,
+    #fa8a19,
+    #fa9126,
+    #fb9831,
+    #fb9e3c
+  );
+  color: #fff;
+  border-radius: 50px;
+  padding: 15px 30px;
+  border: 0;
+  transition: all 500ms ease;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.hero--info .btn:hover,
+.hero-about .info .btn:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.hero img {
+  position: absolute;
+  top: -150px;
+  right: -15px;
+}
+
+/*Cекция с играми*/
+
+.tranding {
+  padding-top: 50px;
+}
+
+.tranding h3 {
+  font-weight: 600;
+  font-size: 31;
+}
+
+.tranding .see-all {
+  color: #fff;
+  background: #ffffff1c;
+  border-radius: 15px;
+  padding: 12px 23px;
+  float: right;
+  display: block;
+  font-size: 400;
+  font-weight: 20;
+  transition: all 500ms ease;
+}
+
+.tranding .see-all:hover {
+  transform: scale(1.1);
+}
+
+.tranding .games {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 50px 0;
+}
+
+.tranding .games span {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.tranding .games span img {
+  position: relative;
+  top: 5px;
+  margin-right: 7px;
+}
+
+.big-text {
+  font-size: 35;
+  font-weight: 600;
+  padding: 50px 0;
+  text-align: center;
+  width: 800px;
+}
+
+.banner {
+  padding: 80px 0;
+}
+
+.banner h3 {
+  font-size: 30;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.banner p {
+  font-size: 16;
+  font-weight: 400;
+  line-height: 170%;
+  width: 550px;
+}
+
+.banner img {
+  width: 100%;
+  margin-bottom: 30px;
+  margin-top: 50px;
+}
+
+/* Секция где картинка на фоне*/
+
+.fe {
+  background: url("imgg/Rectangle 5.png") no-repeat center center fixed;
+  background-size: cover;
+}
+.fe h1,
+.fe p {
+  margin-bottom: 20px;
+  width: 830px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.fe h1 {
+  font-size: 30;
+  font-weight: 700;
+  padding-top: 70px;
+  padding-bottom: 20px;
+}
+
+.fe p {
+  font-size: 16;
+  font-weight: 400;
+}
+.fe .info {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.fe .info .block {
+  text-align: center;
+  width: 20%;
+  margin: 50px 2%;
+}
+
+.fe .info .block p {
+  width: 100%;
+}
+
+.projects {
+  padding: 100px 0;
+}
+
+.projects h3 {
+  font-size: 30px;
+  text-align: center;
+}
+
+.projects p {
+  margin: 40px 30%;
+  width: 40%;
+  text-align: center;
+}
+
+.projects .img {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+
+.projects .see-all {
+  color: #fff;
+  background: #25211d;
+  border-radius: 10px;
+  padding: 12px 23px;
+  float: none;
+  display: block;
+  margin: 0 auto;
+  font-size: 400;
+  font-weight: 20;
+  transition: all 500ms ease;
+  text-align: center;
+  width: 60px;
+}
+
+.projects .see-all:hover {
+  transform: scale(1.1);
+}
+
+/*about страница про нас*/
+
+.hero-about .info {
+  width: 500px;
+  padding: 250px 0;
+}
+
+.info ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 150px;
+  position: relative;
+  left: -150px;
+  font-size: 400;
+  font-weight: 12px;
+  list-style: none;
+}
+
+.info ul {
+  color: #fff;
+  margin-bottom: 50px;
+}
+
+.info ul li a.dddd {
+  color: #fff;
+  display: block;
+  transition: all 500ms ease;
+  text-align: center;
+}
+
+.info ul li a.dddd:hover {
+  transform: scale(1.1);
+  color: #898989;
+}
+
+.info ul li a.ddd:hover {
+  transform: scale(1.1);
+  color: #9c5305;
+}
+
+.info ul li a.ddd {
+  color: #dc7000;
+}
+
+.info ul li a.ddd {
+  display: block;
+  transition: all 500ms ease;
+  text-align: center;
+}
+
+.info ul li a.ddd {
+  position: relative;
+  right: 55px;
+}
+
+.hero-about .info h1 {
+  margin-bottom: 15px;
+  font-size: 30px;
+}
+
+.hero-about .info .btn {
+  margin-top: 20px;
+  padding-left: 10px;
+  padding-right: 60px;
+}
+
+.hero-about .info .btn img {
+  position: relative;
+  top: 0px;
+  right: -120px;
+}
+
+.hero-about img {
+  position: absolute;
+  right: -0px;
+  top: 180px;
+}
+
+.work h2 {
+  font-size: 25px;
+  margin-bottom: 40px;
+  margin-left: 100px;
+}
+
+.work .blocks {
+  display: inline-flex;
+  justify-content: space-between;
+  margin: 0px 100px;
+}
+
+.work .blocks .block {
+  width: 25%;
+  border-radius: 20px;
+  padding: 50px 35px;
+  background: #1c140f;
+  margin: -1px;
+  margin-bottom: 100px;
+}
+
+.work .blocks .block h3 {
+  font-size: 20px;
+  margin: 20px 0;
+}
+
+.work .blocks .block .badge {
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+
+.work .blocks .block .badge.purple {
+  background-color: #b000dc2d;
+  content: "Why work with us";
+}
+
+.work .blocks .block .badge.brown {
+  background: #dc42002d;
+}
+
+.work .blocks .block .badge.green {
+  background: #00dc8d2d;
+}
+
+/*CONTACT US*/
+
+.hero-contacts .info {
+  position: relative;
+  margin-top: 90px;
+  text-align: center;
+}
+
+.hero-contacts .info ul li.lii {
+  margin-left: 57%;
+}
+
+.hero-contacts .info ul li.con {
+  margin-right: 23%;
+}
+
+.hero-contacts h1 {
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 30px;
+  font-size: 30px;
+}
+
+.hero-contacts p {
+  text-align: center;
+  margin-top: 55px;
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+
+.hero-contacts img {
+  margin-top: 80px;
+  width: 1060px;
+  position: ;
+}
+
+.hero-contacts .imgg {
+  text-align: center;
+}
+
+.wrapper .feedback {
+  background: url("imgg/Group 1321.png") no-repeat center center;
+  width: 100%;
+  background-size: cover;
+  height: 860px;
+}
+
+.feedback h2 {
+  font-weight: 500;
+  font-size: 30px;
+  text-align: center;
+  padding-top: 40px;
+}
+
+.feedback p {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.feedback form {
+  margin: 80px auto;
+  width: 600px;
+}
+
+.feedback form .inline {
+  display: flex;
+  justify-content: space-between;
+}
+
+.feedback form .inline > div {
+  width: 50%;
+}
+
+.feedback form label {
+  color: #4f4f4f;
+  font-size: 14px;
+}
+
+.feedback form input,
+.feedback form textarea {
+  background: #2c2420;
+  border-radius: 10px;
+  border: 0.6px solid #cecece;
+  display: block;
+  width: 90%;
+  padding: 15px 10px;
+  outline: none;
+  color: #fff;
+  margin-top: 7px;
+  margin-bottom: 20px;
+}
+
+.feedback form .oneline {
+  width: 96%;
+}
+
+.feedback form textarea {
+  resize: none;
+  height: 200px;
+}
+
+.feedback form button {
+  background: #dc7000;
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
+  float: right;
+  color: #fff;
+  padding: 15px 30px;
+  transition: all 500ms ease;
+}
+
+.feedback form button:hover {
+  background: #b01414;
+}
+
+/*Last контейнер завершающий футер*/
+
+.last {
+  padding-bottom: 120px;
+}
+
+.last h3 {
+  margin-top: 30px;
+  font-size: 30px;
+}
+
+.last .block {
+  background: #1c140fb1;
+  margin-top: 30px;
+  border-radius: 20px;
+  padding: 40px 3%;
+  width: 94%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.last .block h4 {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.last .block p {
+  width: 500px;
+}
+
+.last .block input {
+  background: #fff;
+  outline: none;
+  border: 0;
+  border-radius: 15px;
+  width: 380px;
+  font-family: "poppins", "sans-serif";
+  font-weight: 400;
+  padding: 20px 30px;
+  opacity: 0.86;
+  position: relative;
+  left: 90px;
+  z-index: 1;
+  padding-right: 120px;
+}
+
+.last .block input::placeholder {
+  color: #898989;
+}
+
+.last .block button {
+  background: #fa9021;
+  padding: 13px 17px;
+  border-radius: 11px;
+  transition: all 200ms ease;
+  border: none;
+  position: relative;
+  z-index: 2;
+  left: -14px;
+  color: #fff;
+}
+
+.last .block button {
+  cursor: pointer;
+}
+
+footer {
+  background: #070707;
+  padding: 50px 0;
+}
+
+footer .blocks {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .blocks .logo {
+  font-size: 24px;
+  font-weight: 800;
+}
+footer .blocks p {
+  width: 300px;
+  margin: 15px 0;
+  font-size: 16px;
+}
+
+footer .blocks h4 {
+  font-weight: 100;
+  font-size: 17px;
+}
+
+footer .blocks h6 {
+  font-weight: 100;
+  font-size: 16px;
+}
+
+footer .blocks ul {
+  list-style: none;
+}
+footer .blocks ul li {
+  margin-top: 7px;
+  opacity: 0.8;
+}
+footer .blocks .pp {
+  margin-top: 40px;
+}
+
+footer .blocks .img1 {
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+  margin-right: 50px;
+  position: relative;
+  top: 100px;
+}
+
+footer hr {
+  margin: 30px 0;
+  border: 0;
+  height: 0.6px;
+  background: #ccc;
+}
+
+footer > p {
+  text-align: center;
+  font-weight: 100;
+  font-size: 13px;
+}
