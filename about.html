@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <header class="container">
+        <span class="logo">logo</span>
+        <nav>
+          <ul>
+            <li><a href="/">home</a></li>
+            <li class="active"><a href="/about.html">about us</a></li>
+            <li><a href="/pr.html">portfolio</a></li>
+            <li><a href="/news.html">news</a></li>
+            <li class="btn"><a href="/contacts.html">Contacts</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="hero-about container">
+        <div class="info">
+          <ul>
+            <li class="lii">
+              <a class="dddd" href="/">Home &nbsp ></a>
+            </li>
+            <li class="active">
+              <a class="ddd" href="/about.html">About us</a>
+            </li>
+          </ul>
+          <h1>Lorem Ipsum is simply dummy text of the printing and.</h1>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s.
+          </p>
+          <button class="btn">
+            <img src="imgg/111.png" alt="" />Get in touch
+          </button>
+
+          <img src="about banner.png" alt="" />
+        </div>
+      </div>
+      <div class="container work">
+        <h2>Why work with us</h2>
+        <div class="blocks">
+          <div class="block bb">
+            <span class="badge purple"> Why work with us </span>
+            <h3>Why work with us</h3>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s,
+            </p>
+          </div>
+          <div class="block bbb">
+            <span class="badge brown"> Why work with us </span>
+            <h3>Why work with us</h3>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s,
+            </p>
+          </div>
+          <div class="block bbbb">
+            <span class="badge green"> Why work with us </span>
+            <h3>Why work with us</h3>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s,
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="container last">
+        <h3>Lorem Ipsum</h3>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry.
+        </p>
+        <div class="block">
+          <div>
+            <h4>Stay in the loop</h4>
+            <p>
+              Subscribe to receive the latest news and updates about TDA. We
+              promise not to spam you!
+            </p>
+          </div>
+          <div>
+            <input
+              type="email"
+              id="emailField"
+              placeholder="Enter email address"
+            />
+            <button onclick="checkEmail()">Continue</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="blocks container">
+        <div>
+          <span class="logo">LOGO</span>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
+          </p>
+          <h6>@Logo</h6>
+        </div>
+        <div>
+          <h4>About us</h4>
+          <ul>
+            <li>Zeux</li>
+            <li>Portfolio</li>
+            <li>Careers</li>
+            <li>Contact us</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact us</h4>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
+          </p>
+          <div class="pp"><p>+908 89097 890</p></div>
+        </div>
+        <div class="img1">
+          <img src="imgg/Group 5.png" alt="" />
+          <img src="imgg/Group 9.png" alt="" />
+          <img src="imgg/Group 10.png" alt="" />
+          <img src="imgg/Group 11.png" alt="" />
+        </div>
+      </div>
+      <hr />
+      <p>Copyright ® 2021 Lorem All rights Rcerved</p>
+    </footer>
+    <script>
+      function checkEmail() {
+        let email = document.querySelector("#emailField").value;
+        if (!email.includes("@")) alert("сосни хуйца, поставь знак @");
+        else if (!email.includes(".")) alert("сосни хуйца, посставь точку .");
+        else alert("все отлично!");
+      }
+    </script>
+  </body>
+</html>
