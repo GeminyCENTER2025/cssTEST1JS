@@ -240,7 +240,7 @@ header nav ul li.btn a:hover,
 /* Секция где картинка на фоне*/
 
 .fe {
-  background: url("imgg/Rectangle 5.png") no-repeat center center fixed;
+  background: url("Rectangle 5.png") no-repeat center center fixed;
   background-size: cover;
 }
 .fe h1,
@@ -482,7 +482,7 @@ header nav ul li.btn a:hover,
 }
 
 .wrapper .feedback {
-  background: url("imgg/Group 1321.png") no-repeat center center;
+  background: url("Group 1321.png") no-repeat center center;
   width: 100%;
   background-size: cover;
   height: 860px;
